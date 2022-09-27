@@ -50,6 +50,9 @@ if settings?.isEmpty == true { settings = nil }
 
 let package = Package(
   name: "swift-collections",
+  platforms: [
+    .macOS(.v12),
+  ],
   products: [
     .library(name: "Collections", targets: ["Collections"]),
     .library(name: "DequeModule", targets: ["DequeModule"]),
